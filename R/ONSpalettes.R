@@ -4,24 +4,24 @@
 #' Use names(ONScolours) to return all palette names.
 #' @export
 ONScolours <- list(
-  categorical <- list(
+  categorical = list(
     c(
       "#206095", "#27A0CC", "#871A5B", "#A8BD3A", "#F66068",
       "#003C57", "#22D0B6", "#746CB1", "#118C7B", "#A09FA0"
     ),
     type = "qual"
   ),
-  categorical_text <- list(
+  categorical_text = list(
     c(
       "#206095", "#1F80A3", "#871A5B", "#6E7E26", "#F66068",
       "#003C57", "#1AA590", "#746CB1", "#118C7B", "#8D8C8E"
     ),
     type = "qual"
   ),
-  pos_neg <- list(c("#206095", "#F66068"),
+  pos_neg = list(c("#206095", "#F66068"),
     type = "qual"
   ),
-  mf <- list(c("#2EA1A4", "#6749A6", "#9A86E9"),
+  mf = list(c("#2EA1A4", "#6749A6", "#9A86E9"),
     type = "qual"
   )
 )
