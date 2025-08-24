@@ -182,7 +182,7 @@ scale_color_ONS_c <- scale_colour_ONS_c
 #' @param ... other arguments to be passed to \code{scale_fill_gradientn}
 #' @export
 scale_fill_ONS_c <- function(palette_name, ...) {
-  ggplot2::scale_fill_gradientn(colours = ONS_palettes(
+  ggplot2::scale_fill_gradientn(colours = ONSpalettes(
     palette_name = palette_name,
     type = "continuous"
   ), ...)

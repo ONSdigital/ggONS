@@ -1,6 +1,6 @@
 #' Set ONS base R graphical parameters
 #'
-#' @param family Font used for all text elements. Default "OPen Sans".
+#' @param family Font used for all text elements. Default "Open Sans".
 #' @param adj Alignment of text for title. Default 0.
 #' @param mar Margins. Default \code{c(5, 3, 3, 2.5)}.
 #' @param bty Axis lines. Default "n".
@@ -8,10 +8,10 @@
 #' @export
 
 set_ONS_par <- function(family = "Open Sans",
-                       adj = 0,
-                       mar = c(5, 3, 3, 2.5),
-                       bty = "n",
-                       ...) {
+                        adj = 0,
+                        mar = c(5, 3, 3, 2.5),
+                        bty = "n",
+                        ...) {
   graphics::par(
     family = family,
     adj = adj,
