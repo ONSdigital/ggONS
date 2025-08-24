@@ -1,0 +1,32 @@
+Package: ggONS
+Title: Functions for ONS branded plots and presentations
+Version: 0.0.1
+Authors@R: 
+    person(given = "Nicola",
+           family = "Rennie",
+           role = c("aut", "cre"),
+           email = "nrennie35@gmail.com")
+Description: Provides templates and extensions for presentations
+  with Quarto, and includes functions for styling plots and tables.
+Imports:
+    cowplot,
+    dplyr,
+    ggforce,
+    ggplot2,
+    ggtext,
+    glue,
+    graphics,
+    grDevices,
+    magrittr,
+    purrr,
+    showtext,
+    stringr,
+    sysfonts,
+    tibble
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

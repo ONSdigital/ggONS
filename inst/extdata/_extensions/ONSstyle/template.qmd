@@ -1,0 +1,25 @@
+---
+title: "Presentation Title"
+subtitle: "Subtitle"
+author: "Your Name"
+date: "01 January, 1970"
+date-format: long
+format:
+  ONSstyle-revealjs:
+    self-contained: false
+execute: 
+  eval: true
+  echo: false
+  warning: false
+fig-cap-location: top
+---
+
+## First slide
+
+# Section {background-color="#003c57" background-image="../_extensions/nrennie/ONSstyle/ONSdots.svg" background-size="30%" background-position="90% 50%"} 
+
+## Next slides
+
+* Bullets
+
+## Another slide

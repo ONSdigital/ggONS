@@ -1,0 +1,153 @@
+/*-- scss:defaults --*/
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// font family
+$font-family-sans-serif: 'Open Sans', Arial, sans-serif !default;
+$presentation-heading-font: 'Open Sans', Arial, sans-serif !default;
+
+// font size
+$presentation-h1-font-size: 2.6em;
+$presentation-h2-font-size: 1.7em;
+$presentation-h3-font-size: 1.4em;
+$presentation-h4-font-size: 1.1em;
+$presentation-font-size-root: 36px;
+$presentation-line-height: 1.5em;
+
+// colour variables
+$ons-night-blue: #003c57;
+$ons-spring-green: #a8bd3a;
+$ons-aqua-teal: #00a3a6;
+$ons-ocean-blue: #206095;
+$ons-sky-blue: #27a0cc;
+$ons-night-blue70: #4d7789;
+$ons-night-blue40: #99b1bd;
+$ons-night-blue10: #e6ecee;
+
+$ons-black: #222222;
+$ons-grey100: #414042;
+$ons-grey75: #707071;
+$ons-grey35: #bcbcbd;
+$ons-grey15: #e2e2e3;
+$ons-grey5: #f5f5f6;
+$ons-white: #ffffff;
+
+// font colour
+$presentation-heading-color: $ons-night-blue !default;
+
+// code
+$code-color: $ons-ocean-blue !default;
+$code-block-font-size: 0.7em;
+$code-block-border-color: $ons-black;
+$code-block-bg: $ons-night-blue10;
+
+// bg colours
+$body-color: $ons-black;
+$link-color: $ons-ocean-blue;
+$body-bg: #f4f4f4;
+
+/*-- scss:rules --*/
+
+.subtitle {
+  font-size: $presentation-h3-font-size;
+  font-family: $font-family-sans-serif;
+}
+
+.title, .subtitle, .quarto-title-author-name, .date {
+  text-align: left;
+  padding-left: 0px;
+}
+
+.quarto-title-authors, .quarto-title-author {
+  justify-content: left !important;
+  padding-left: 0px !important;
+}
+
+h1 {
+  max-width: 50% !important;
+  text-align: left !important;
+}
+
+h2 {
+  padding-bottom: 35px;
+}
+
+.author {
+  color: $body-bg;
+  font-size: $presentation-h4-font-size;
+  font-family: $font-family-sans-serif;
+}
+
+.author a {
+  color: $body-bg;
+  font-size: $presentation-h4-font-size;
+  font-family: $font-family-sans-serif;
+}
+
+section.has-dark-background a, section.has-dark-background a:hover {
+  color: $body-bg;
+}
+
+section.has-light-background a, section.has-light-background a:hover {
+  color: $link-color !important;
+}
+
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 2.5% !important;
+  right: 25px !important;
+  top: unset !important;
+  color: $ons-white !important;
+  z-index: -999 !important;
+}
+
+.reveal .footer {
+  font-family: $font-family-sans-serif;
+  padding-bottom: 0px;
+  bottom: 0px !important;
+  margin-bottom: 0px;
+  color: $ons-spring-green;
+  background-color:  $ons-night-blue;
+  height: 10%;
+  margin-top: 1em;
+  z-index: -999 !important;
+}
+
+.reveal .slide-logo {
+  left: 5px;
+  bottom: 0px !important;
+  padding-left: 5px !important;
+  padding-bottom: 0px !important;
+  max-height: 5% !important;
+}
+
+.reveal .slide-menu-button {
+    left: 5px;
+    top: 25px;
+    padding-left: 10px;
+    color: $ons-white;
+  }
+
+.reveal .progress {
+  background: $ons-night-blue;
+  color: $ons-spring-green;
+  height: 2%;
+  top: 0;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.small {
+ font-size: 30px;
+}
+
+.big {
+  font-weight: bold;
+  font-size: 2.4em;
+}

@@ -1,0 +1,20 @@
+title: ONS Quarto Template
+author: Nicola Rennie
+version: 0.0.1
+contributes:
+  formats:
+    revealjs:
+      logo: ONSlogo.png
+      theme: ONSstyle.scss
+      auto-stretch: false
+      slide-number: c
+      self-contained: true
+      height: 900
+      width: 1600
+      title-slide-attributes:
+        data-background-color: "#003c57"
+        data-background-image: "ONSdots.svg"
+        data-background-size: "30%"
+        data-background-position: "90% 50%"
+    html:
+      theme: [default, ONSstyle.scss]
