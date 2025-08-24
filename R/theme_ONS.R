@@ -13,7 +13,7 @@ theme_ONS <- function(family = "Open Sans",
     ggplot2::theme(
       plot.title = ggplot2::element_text(
         colour = "black",
-        fontface = "bold"
+        face = "bold"
       ),
       plot.subtitle = ggplot2::element_text(
         colour = grey_60
@@ -28,8 +28,22 @@ theme_ONS <- function(family = "Open Sans",
       ),
       axis.title.x = ggplot2::element_text(
         colour = grey_60,
-        hjust = 1
+        hjust = 1,
+        margin = ggplot2::margin(
+          b = 20
+        ),
+        size = ggplot2::rel(0.9)
       ),
+      axis.title.y = element_blank(),
+      plot.tag = ggplot2::element_text(
+        colour = grey_60,
+        hjust = 0,
+        vjust = 0.5,
+        margin = ggplot2::margin(t = 10, b = 10),
+        size = ggplot2::rel(0.9)
+      ),
+      plot.tag.position = c(0, 1.05),
+      plot.tag.location = "panel",
       plot.background = ggplot2::element_rect(
         fill = bg_col,
         colour = bg_col
@@ -38,8 +52,8 @@ theme_ONS <- function(family = "Open Sans",
         fill = bg_col,
         colour = bg_col
       ),
-      plot.margin = ggplot2::margin(10, 10, 10, 10),
       legend.position = "top",
-      legend.title = ggplot2::element_blank()
+      legend.title = ggplot2::element_blank(),
+      legend.box.margin = ggplot2::margin(b = 10)
     )
 }
