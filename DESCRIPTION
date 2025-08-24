@@ -8,21 +8,14 @@ Authors@R:
            email = "nrennie35@gmail.com")
 Description: Provides templates and extensions for presentations
   with Quarto, and includes functions for styling plots and tables.
+Depends: R (>= 4.1.0)
 Imports:
-    cowplot,
-    dplyr,
-    ggforce,
     ggplot2,
-    ggtext,
-    glue,
     graphics,
     grDevices,
-    magrittr,
     purrr,
     showtext,
-    stringr,
-    sysfonts,
-    tibble
+    sysfonts
 License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

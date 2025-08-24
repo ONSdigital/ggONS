@@ -13,7 +13,7 @@ set_ONS_par(
 )
 }
 \arguments{
-\item{family}{Font used for all text elements. Default "OPen Sans".}
+\item{family}{Font used for all text elements. Default "Open Sans".}
 
 \item{adj}{Alignment of text for title. Default 0.}
 
