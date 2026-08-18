@@ -47,7 +47,7 @@ gapminder |>
   ) +
   geom_line() +
   # Use colour scale with categorical palette
-  scale_colour_ONS_d(palette_name = "categorical") +
+  scale_colour_ONS_d() +
   # Use tag instead of `y` for horizontal orientation
   labs(x = NULL, tag = "Average life expectancy") +
   theme_ONS() 

@@ -52,6 +52,7 @@ theme_ONS <- function(family = "Open Sans",
         fill = bg_col,
         colour = bg_col
       ),
+      panel.grid.minor = ggplot2::element_blank(),
       legend.position = "top",
       legend.title = ggplot2::element_blank(),
       legend.box.margin = ggplot2::margin(b = 10)

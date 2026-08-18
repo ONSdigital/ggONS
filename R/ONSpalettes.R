@@ -4,24 +4,28 @@
 #' Use names(ONScolours) to return all palette names.
 #' @export
 ONScolours <- list(
-  categorical = list(
+  categorical1 = list(
     c(
-      "#206095", "#27A0CC", "#871A5B", "#A8BD3A", "#F66068",
-      "#003C57", "#22D0B6", "#746CB1", "#118C7B", "#A09FA0"
+      "#206095", "#a8bd3a", "#871A5B", "#f66068", "#05341a", "#27a0cc"
     ),
     type = "qual"
   ),
-  categorical_text = list(
+  categorical2 = list(
     c(
-      "#206095", "#1F80A3", "#871A5B", "#6E7E26", "#F66068",
-      "#003C57", "#1AA590", "#746CB1", "#118C7B", "#8D8C8E"
+      "#206095", "#27A0CC", "#871A5B", "#A8BD3A", "#F66068", "#003C57"
+    ),
+    type = "qual"
+  ),
+  categorical2_text = list(
+    c(
+      "#206095", "#1F80A3", "#871A5B", "#6E7E26", "#F66068", "#003C57"
     ),
     type = "qual"
   ),
   pos_neg = list(c("#206095", "#F66068"),
     type = "qual"
   ),
-  mf = list(c("#2EA1A4", "#6749A6", "#9A86E9"),
+  mf = list(c("#2EA1A4", "#6749A6"),
     type = "qual"
   )
 )
@@ -33,6 +37,10 @@ ocean_blue <- "#206095"
 #' Define global colours
 #' @export
 sky_blue <- "#27A0CC"
+
+#' Define global colours
+#' @export
+dark_leaf_green <- "#05341a"
 
 #' Define global colours
 #' @export
@@ -75,7 +83,7 @@ grey_60 <- "#8D8C8E"
 #' @param palette_name Name of Palette.
 #' @param n Number of desired colours. If number of requested colours is beyond the scope
 #' of the palette, colours are automatically interpolated.
-#' @param type The type of palette. One of c("discrete", "continuous").
+#' @param type The type of palette. One of `c("discrete", "continuous")`.
 #' @return A vector of colours.
 #' @export
 ONSpalettes <- function(palette_name,
@@ -130,10 +138,10 @@ view_all_palettes <- function() {
 }
 
 #' Function to change colours in ggplot for discrete variables
-#' @param palette_name Name of palette.
+#' @param palette_name Name of palette. Default `"categorical1"`.
 #' @param ... other arguments to be passed to \code{scale_colour_manual}
 #' @export
-scale_colour_ONS_d <- function(palette_name, ...) {
+scale_colour_ONS_d <- function(palette_name = "categorical1", ...) {
   ggplot2::scale_colour_manual(
     values = ONSpalettes(palette_name,
       type = "discrete"
@@ -142,17 +150,17 @@ scale_colour_ONS_d <- function(palette_name, ...) {
 }
 
 #' Function to change colours in ggplot for discrete variables
-#' @param palette_name Name of palette.
+#' @param palette_name Name of palette. Default `"categorical1"`.
 #' @param ... other arguments to be passed to \code{scale_colour_manual}
 #' @export
 scale_color_ONS_d <- scale_colour_ONS_d
 
 
 #' Function to change fill in ggplot for discrete variables
-#' @param palette_name Name of palette.
+#' @param palette_name Name of palette. Default `"categorical1"`.
 #' @param ... other arguments to be passed to \code{scale_fill_manual}
 #' @export
-scale_fill_ONS_d <- function(palette_name, ...) {
+scale_fill_ONS_d <- function(palette_name = "categorical1", ...) {
   ggplot2::scale_fill_manual(
     values = ONSpalettes(palette_name,
       type = "discrete"
@@ -161,10 +169,10 @@ scale_fill_ONS_d <- function(palette_name, ...) {
 }
 
 #' Function to change colours in ggplot for continuous variables
-#' @param palette_name Name of palette.
+#' @param palette_name Name of palette. Default `"categorical1"`.
 #' @param ... other arguments to be passed to \code{scale_colour_gradientn}
 #' @export
-scale_colour_ONS_c <- function(palette_name, ...) {
+scale_colour_ONS_c <- function(palette_name = "categorical1", ...) {
   ggplot2::scale_colour_gradientn(colours = ONSpalettes(
     palette_name = palette_name,
     type = "continuous"
@@ -172,16 +180,16 @@ scale_colour_ONS_c <- function(palette_name, ...) {
 }
 
 #' Function to change colours in ggplot for continuous variables
-#' @param palette_name Name of palette.
+#' @param palette_name Name of palette. Default `"categorical1"`.
 #' @param ... other arguments to be passed to \code{scale_colour_gradientn}
 #' @export
 scale_color_ONS_c <- scale_colour_ONS_c
 
 #' Function to change fill in ggplot for continuous variables
-#' @param palette_name Name of palette.
+#' @param palette_name Name of palette. Default `"categorical1"`.
 #' @param ... other arguments to be passed to \code{scale_fill_gradientn}
 #' @export
-scale_fill_ONS_c <- function(palette_name, ...) {
+scale_fill_ONS_c <- function(palette_name = "categorical1", ...) {
   ggplot2::scale_fill_gradientn(colours = ONSpalettes(
     palette_name = palette_name,
     type = "continuous"
